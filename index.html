@@ -1,0 +1,12 @@
+---
+layout: default
+---
+	<h1>{{ site.name }}</h1>
+	
+	<img src="http://www.columbia.edu/~els2178/doritos.jpg">
+	
+{% include_relative somedir/_posts/1776-07-04-fourth.md %}
+	
+	{% capture mo %}{% include 1776-07-04-fourth.md %}{% endcapture %}
+        {{ mo | markdownify }}
+
